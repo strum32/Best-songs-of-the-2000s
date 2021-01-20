@@ -35,13 +35,13 @@
 
 
 ### Wire Frames
-![priority matrix](https://i.imgur.com/h4pTnU4.png)
-[priority matrix](https://i.imgur.com/kpikbcS.png)
-[priority matrix](https://i.imgur.com/kYCscdC.png)
+![Wire Frame Home Web](https://i.imgur.com/h4pTnU4.png)
+ [Wire Frame Info Web](https://i.imgur.com/kpikbcS.png)
+ [Wire Frame Create Song Web](https://i.imgur.com/kYCscdC.png)
 
-[priority matrix](https://i.imgur.com/ZkR4xDg.png)
-[priority matrix](https://i.imgur.com/uMLxNOA.png)
-[priority matrix](https://i.imgur.com/VoC1xL8.png)
+[Wire Frame Home Mobile](https://i.imgur.com/ZkR4xDg.png)
+[Wire Frame Info Mobile](https://i.imgur.com/uMLxNOA.png)
+[Wire Frame Create Song Mobile](https://i.imgur.com/VoC1xL8.png)
 
 
 ### Component Hierarchies 
@@ -64,11 +64,21 @@
 | ---- | ------------- | ----------- | ------------- | ----------- |
 | Proposal | H   | 3 hrs     |    | |
 | Airtbale | H   | .5 hrs    |    | |
-| Data pop 1 | H | 2 hrs      |   | |
-| Data pop 2  | H | 2 hrs      |  | |
-| Data pop 3  | H | 2 hrs  |      | |
+| working with API | H | 2 hrs  |      | |
+| search bars | H   | 4 hrs    |    | |
+| creating buttons | H   | 2.5 hrs    |    | |
+| Data population 1 | H | 2.5 hrs     |    | |
+| Data population 2  | H | 2.5 hrs    |    | |
+| Data population 3  | H | 2.5 hrs  |      | |
 | form creation  | H | 3 hrs |    | |
+| routing of webpages | H | 2 hrs |    | |
+| making a coehesive webpages | H | 2 hrs |    | |
+| Data creation |  H   | 3 hrs  | | |
 | Data Deletion |  H   | 3 hrs  | | |
+| css styling |  H   | 4 hrs  | | |
+| creating media queries|  H   | 4 hrs  | | |
+| Everything on page is working |  H   | 1 hr  | | |
+| total |  H   | 41.5 hr  | | |
 
 
 
