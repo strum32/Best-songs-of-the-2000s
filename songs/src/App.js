@@ -7,20 +7,23 @@ import Albums from "./components/Albums";
 import './App.css';
 
 function App() {
-  const [songs, setSongs] = useState([]);
+  const [topHits, setTopHits] = useState([]);
 
   useEffect(() => {
-    const getSongs = async () => {
+    const getTopHits = async () => {
       const resp = await axios.get(baseURL, config);
-      setSongs(resp.data.records)
+      setTopHits(resp.data.records)
     };
-    getSongs()
+    getTopHits()
   }, []);
 
   return (
     <div className="App">
-      <Route path="/">
-         <Albums songs={songs}/>
+      <Route exact path="/">
+        <Albums topHits={topHits}/>
+      </Route>
+      <Route>
+        {/* <Artist topHits={topHits}/> */}
       </Route>
     </div>
   );
