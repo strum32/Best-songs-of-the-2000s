@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 import Albums from "./components/Albums";
-//import Artist from './components/Artist';
+import Header from "./components/Header";
+import Artist from './components/Artist';
 import './App.css';
 
 function App() {
@@ -20,10 +21,11 @@ function App() {
   return (
     <div className="App">
       <Route exact path="/">
+        <Header/>
         <Albums topHits={topHits}/>
       </Route>
-      <Route>
-        {/* <Artist topHits={topHits}/> */}
+      <Route path="/albums/:singer">
+        <Artist topHits={topHits}/>
       </Route>
     </div>
   );

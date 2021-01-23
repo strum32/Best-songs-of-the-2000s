@@ -1,10 +1,12 @@
 import React from "react";
 
-function header(props) {
+function Header(props) {
   return (
-    <div>
+  <nav>
+    <div className="header">
       <h1>Best Songs of the 2000s</h1>
     </div>
+  </nav>
   );
 }
 

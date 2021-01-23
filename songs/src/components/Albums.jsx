@@ -5,9 +5,9 @@ function Albums(props) {
   return (
     <div>
       {props.topHits.map((topHit) => (
-        <div key={topHit.id}>
+        <div id="album1" key={topHit.id}>
           <Link key={topHit.fields.singer} to={`/album/${topHit.fields.singer}`}>
-            <img src={topHit.fields.album} alt={topHit.fields.singer} />
+            <img id="album"  src={topHit.fields.album} alt={topHit.fields.singer} />
           </Link>
         </div>
       ))};
