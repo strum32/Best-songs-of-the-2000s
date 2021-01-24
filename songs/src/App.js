@@ -15,9 +15,10 @@ function App() {
     const getTopHits = async () => {
       const resp = await axios.get(baseURL, config);
       setTopHits(resp.data.records)
+      console.log(resp.data.records)
     };
     getTopHits()
-  }, []);
+  }, [])
 
   return (
     <div className="App">
@@ -29,11 +30,11 @@ function App() {
       <Route path="/new">
         <h2>This is the form</h2>
       </Route>
-      <Route path="/albums/:singer">
-        {/* <Artist artists={topHits}/> */}
+      <Route path="/albums/:id">
+        <Artist topHits={topHits}/>
       </Route>
     </div>
-  );
+  )
 }
 
 export default App;

@@ -24,7 +24,7 @@ console.log(filteredSingers)
     <form className="search">
 
       <input
-        Value={name}
+        value={name}
         onChange={(e) => setName(e.target.value)} />
       {name &&
       <div>{name  && filteredSingers.map((item) => <p>{item.fields.singer}</p>)}</div>
