@@ -6,19 +6,20 @@ import Search from './components/Search';
 import Albums from "./components/Albums";
 import Header from "./components/Header";
 import Artist from './components/Artist';
+import Form from "./components/Form";
 import './App.css';
 
 function App() {
   const [topHits, setTopHits] = useState([]);
+  const [toggle, setToggle] = useState(false)
 
   useEffect(() => {
     const getTopHits = async () => {
       const resp = await axios.get(baseURL, config);
       setTopHits(resp.data.records)
-      console.log(resp.data.records)
     };
     getTopHits()
-  }, [])
+  }, [toggle])
 
   return (
     <div className="App">
@@ -28,7 +29,7 @@ function App() {
         <Albums topHits={topHits}/>
       </Route>
       <Route path="/new">
-        <h2>This is the form</h2>
+        <Form toggle={toggle} setToggle={setToggle}/>
       </Route>
       <Route path="/albums/:id">
         <Artist topHits={topHits}/>
