@@ -7,6 +7,7 @@ import Albums from "./components/Albums";
 import Header from "./components/Header";
 import Artist from './components/Artist';
 import Form from "./components/Form";
+import Nav from "./components/Nav";
 import './App.css';
 
 function App() {
@@ -25,15 +26,18 @@ function App() {
     <div className="App">
         
       <Route exact path="/">
-        <Header/>
+        <Nav/>
+        <Header />
         <Search source={topHits}/>
         <Albums topHits={topHits}/>
       </Route>
       <Route path="/new">
-        <Header/>
+        <Nav/>
+        <Header />
         <Form toggle={toggle} setToggle={setToggle}/>
       </Route>
       <Route path="/albums/:id">
+        <Nav/>
         <Header/>
         <Artist topHits={topHits}/>
       </Route>

@@ -5,14 +5,16 @@ import { baseURL, config } from "../services";
 
 function Form(props) {
   const [singer, setSinger] = useState("")
-  const [song, setSong] = useState("")
+  const [picture, setPicture] = useState("")
   const [album, setAlbum] = useState("")
+  const [song, setSong] = useState("")
   const [youtube, setYoutube] = useState("")
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     const fields = {
       singer,
+      picture,
       song,
       album,
       youtube,
@@ -24,36 +26,42 @@ function Form(props) {
 
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Create a song</h3>
-      <label htmlFor="name">Singer: </label>
+    <form className="createPage" onSubmit={handleSubmit}>
+      <h2>Create a song</h2>
+      <label htmlFor="singer">Singer's Name: </label>
       <input
         type="text"
         name="name"
         value={singer}
         onChange={(e) => setSinger(e.target.value)}
-        />
-      <label htmlFor="song">Song title: </label>
-      <input
-        type="text"
-        name="song"
-        value={song}
-        onChange={(e) => setSong(e.target.value)}
       />
-      <label htmlFor="genre">Album Picture: </label>
+      <label htmlFor="picture"> Singers Photo: </label>
+      <input
+        name="text"
+        value={picture}
+        onChange={(e)=>setPicture(e.target.value)}
+      />
+      <label htmlFor="album">Album Picture: </label>
       <input
         type="text"
         name="album"
         value={album}
         onChange={(e) => setAlbum(e.target.value)}
       />
-      <label htmlFor="chorus">Main Chorus: </label>
-      <textarea
+      <label htmlFor="Song">Song Name: </label>
+      <input
+        type="text"
+        name="album"
+        value={song}
+        onChange={(e) => setSong(e.target.value)}
+      />
+      <label htmlFor="chorus">Music Video: </label>
+      <input
         name="text"
         value={youtube}
         onChange={(e)=>setYoutube(e.target.value)}
       />
-      <button type="submit">Submit</button>
+      <button className="submitSong"type="submit">Submit</button>
     </form>
   )
 }

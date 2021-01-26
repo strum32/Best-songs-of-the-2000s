@@ -15,7 +15,7 @@ html {
  }
  
 
-nav {
+header {
   background-color: #7cf4d3;
   height: 170px;
   margin-bottom: 120px;
@@ -23,7 +23,7 @@ nav {
   background-size: cover;
 }
 
-.header {
+.background {
   width: 70%;
   height: 280px;
 }
@@ -129,14 +129,45 @@ top: -110px;
 text-align:center;
 }
 
+/* my create page starts */
+
+.createPage {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 20px;
+}
+
+.createPage h2 {
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 25px;
+  margin-top: -70px;
+}
+
+.submitSong {
+  margin-top: 20px;
+  margin-left: 38%;
+  margin-right: 38%;
+  padding: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* Creation of my Nav starts */
+
+Nav {
+ position: absolute;
+ right: 0px;
+ 
+}
 
 
-
-
-
-/* let colors = ['red', 'green', 'blue', 'orange', 'yellow'];
-
-randomColors = colors[Math.floor(Math.random() * colors.length)]; */
 
 
 
