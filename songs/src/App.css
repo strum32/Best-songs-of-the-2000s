@@ -23,6 +23,11 @@ nav {
   background-size: cover;
 }
 
+.header {
+  width: 70%;
+  height: 280px;
+}
+
 h1 {
   padding: 55px;
   font-size: 30px;
@@ -86,25 +91,23 @@ h1 {
 
 /* page two artist page */
 
-.artist{
-  display: flex;
-  flex-direction: column;
-  align-items: center
-  
+
+
+#artist1{
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+padding-top: 20px;
+padding-left: 80px;
 }
 
-.header {
-  width: 70%;
-  height: 280px;
-}
 
 .artistAlbum1 {
   width: 330px;
   height: 330px;
   align-items: center;
   background: #ffffff;
-  display: inline-block;
-  margin: 60px;
   padding: 25px 25px 90px;
   text-align: center;
   text-decoration: none;
@@ -113,17 +116,21 @@ h1 {
   position: relative;
 }
 
-.artist h1 {
-  position: relative;
-  text-align:center;
-  margin-top: -180px;
+.singer {
+position: absolute;
+right: 290px;
+top: 385px;
 }
 
-.artist2 {
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
+#artist2 {
+position: absolute;
+font-size: 30px;
+top: -110px;
+text-align:center;
 }
+
+
+
 
 
 

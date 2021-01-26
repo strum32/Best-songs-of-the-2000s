@@ -23,15 +23,18 @@ function App() {
 
   return (
     <div className="App">
+        
       <Route exact path="/">
         <Header/>
         <Search source={topHits}/>
         <Albums topHits={topHits}/>
       </Route>
       <Route path="/new">
+        <Header/>
         <Form toggle={toggle} setToggle={setToggle}/>
       </Route>
       <Route path="/albums/:id">
+        <Header/>
         <Artist topHits={topHits}/>
       </Route>
     </div>

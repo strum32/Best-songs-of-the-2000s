@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-//import ReactPlayer from "reactplayer";
+import ReactPlayer from "react-player";
+
 
 function Artist(props) {
   const params = useParams()
@@ -13,15 +14,18 @@ function Artist(props) {
     return <p>Loading...</p>;
   } else {
     return (
-      <div className="artist">
-        <img className="header" src="https://wwwimage-secure.cbsstatic.com/base/files/blog/2020-grammy-awards-nominees-promo.jpg" alt="grammy award" />
-        {/* <ReactPlayer contorls url={topHits.fields.youtube}/> */}
+      <div id="artist1">
+          <ReactPlayer id="artistVideo"
+            height="446px"
+            controls
+            url={topHits.fields.youtube}
+          />
           <img className="artistAlbum1" src={topHits.fields.picture} alt={topHits.fields.singer} />
-          <h1> {topHits.fields.singer}</h1>
-        <div className="artist2">
+      <div>
+          <h2 className="singer"> {topHits.fields.singer}</h2>
+        </div>
+        <div id="artist2">
           <h2> Song: {topHits.fields.song}</h2>
-          <h2>Weeks at number one: {topHits.fields.top}</h2>
-          <h2>Date released: {topHits.fields.date}</h2>
         </div>
       </div>
     )

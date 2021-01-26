@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 function Search(props) {
   const [name, setName] = useState('');
+  const [search, setSearch] = useState('')
 
   useEffect(() => {
     setName(localStorage.getItem("name") || "");
@@ -13,6 +14,11 @@ function Search(props) {
     localStorage.setItem("name", name);
   }, [name]);
 
+  const handleSubmit = ((e) => {
+    e.preventDefualt()
+    setSearch(name)
+  })
+
   const filteredSingers = props.source.filter((item) =>
     item.fields.singer.toLowerCase().includes(name.toLowerCase())
   );
@@ -20,16 +26,23 @@ function Search(props) {
 console.log(filteredSingers)
 
   return (
-    
-    <form className="search">
+    <div>
+    <form className="search" onSubmit={handleSubmit}>
 
       <input
         value={name}
         onChange={(e) => setName(e.target.value)} />
-      {name &&
-      <div>{name  && filteredSingers.map((item) => <p>{item.fields.singer}</p>)}</div>
-      }
     </form>
+      {name &&
+      <div >{filteredSingers.map((item) => {
+        return (
+        <div id="album1">
+        <Link key={item.fields.singer} to={`/albums/${item.id}`}>
+          <img id="album"  src={item.fields.album} alt={item.fields.singer} />
+        </Link>
+        <h3>{item.fields.singer}</h3>
+      </div>)})}</div>}
+          </div>
   );
 }
 

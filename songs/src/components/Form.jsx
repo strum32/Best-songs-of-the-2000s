@@ -11,15 +11,15 @@ function Form(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const newSong = {
+    const fields = {
       singer,
       song,
       album,
       youtube,
     }
       
-        await axios.post(baseURL, {newSong}, config);
-        props.setToggleFetch((prev) => !prev)
+        await axios.post(baseURL, {fields}, config);
+        props.setToggle((prev) => !prev)
       };
 
 
@@ -33,14 +33,14 @@ function Form(props) {
         value={singer}
         onChange={(e) => setSinger(e.target.value)}
         />
-      <label htmlFor="song">Favorite Song: </label>
+      <label htmlFor="song">Song title: </label>
       <input
         type="text"
         name="song"
         value={song}
         onChange={(e) => setSong(e.target.value)}
       />
-      <label htmlFor="genre">Song Album: </label>
+      <label htmlFor="genre">Album Picture: </label>
       <input
         type="text"
         name="album"
