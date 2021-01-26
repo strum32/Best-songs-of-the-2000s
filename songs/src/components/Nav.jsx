@@ -4,8 +4,8 @@ function Nav(props) {
 
   return (
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/new">Create a Song</Link>
+      <Link className="homeB" to="/">Home</Link>
+      <Link className="createB" to="/new">Create a Song</Link>
     </nav>
   )
 }
