@@ -237,6 +237,34 @@ transition: all 0.3s ease-in-out;
       padding-top: 30px;
     }
 
+    .createPage {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 20px;
+    } 
+
+    .createB:before{
+      content:'';
+      position: absolute;
+      width:100%;
+      height:2px;
+      bottom: 0;
+      left: 0;
+      background-color: #d46ce7;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out;
+      }
+
+      nav {
+        position: absolute;
+        top: 71px;
+        font-size: 30px;
+        right: 120px;
+      }
+
   .homeB {
           font-size: 22px;
           width: 100%;
@@ -247,19 +275,64 @@ transition: all 0.3s ease-in-out;
           position: absolute;
           margin-top: 45px;}
 
-    .createB:hover:before {
-      text-decoration: none;}
+          .homeB:before{
+            content:'';
+            position: absolute;
+            width:100%;
+            height:2px;
+            bottom: 0;
+            left: 0;
+            background-color: #d46ce7;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+            }
+            
+            .homeB:hover:before {
+              visibility: visible;
+              transform:scaleX(1);
+            }
 
-      .createB:before{
-       text-decoration:none;}
+    .search {
+            margin-top: -70px;
+            padding-bottom: 40px;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            margin-left: 0px;}
 
-    .createPage {
-            display: flex;
-            flex-direction: column;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-top: 20px;
-          } 
+    #album1 {
+            background: #ffffff;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+            transition: all .20s linear;
+            position: relative;
+            margin-left: 30.5px;
+            margin-right: 0px;
+            margin-bottom: 20px;
+          }
+
+    .artistAlbum1 {
+      display:none;}
+
+    .singer {
+      display: none;}
+
+    #artist2 {
+        position: absolute;
+        padding: 0;
+        font-size: 25px;
+        top: -110px;
+        }
+
+     #artist1{
+          position: absolute;
+          padding-top: 20px;
+          padding: 0px;
+          width: 360px;
+          }
   
 }
 
