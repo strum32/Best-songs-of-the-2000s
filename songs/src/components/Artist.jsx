@@ -15,7 +15,8 @@ function Artist(props) {
   } else {
     return (
       <div id="artist1">
-          <ReactPlayer id="artistVideo"
+        <ReactPlayer
+            id="artistVideo"
             height="446px"
             controls
             url={topHits.fields.youtube}
