@@ -7,10 +7,10 @@
 ### MVP
 
 1. display album cover with either band or singers name
-2. be able to filter different number 1 hits by the year the song came out or by the artist. 
-3. display information of all the artists number one hits and the year the song came out
-4. Create your own number 1 hit song title which will be posted to the page and people can vote on it. 
-5. underneath you will be able to comment your favorite song by that artisit. 
+2. be able to filter different number 1 hits by the artist
+3. Create your another number 1 hit by filling in the parameters (singer, album picture, singer picture, music video.
+4. create links that will route you to different pages 
+5. post that singers music video within the page
 
 ### Post MVP
 
@@ -51,10 +51,10 @@
 
 | Day | Deliverable | Staus |
 | ---- | ------------- | ----------- |
-| Jan 20| project approval        | incomplete        |
-| Jan 21 | making my api call       | incomplete     |
-| Jan 23 | information rendered on screen    | incomplete        |
-| Jan 25  | MVP       | incomplete      |
+| Jan 20| project approval        | complete      |
+| Jan 21 | making my api call       | complete  |
+| Jan 23 | information rendered on screen    | complete       |
+| Jan 25  | MVP       | complete      |
 | Jan 27  |   presentation     | incomplete  |
 
 
@@ -62,23 +62,22 @@
 
 | component | Priority | Estimated time | Time Invested | Actual Time |
 | ---- | ------------- | ----------- | ------------- | ----------- |
-| Proposal | H   | 3 hrs     |    | |
-| Airtbale | H   | .5 hrs    |    | |
-| working with API | H | 2 hrs  |      | |
-| search bars | H   | 4 hrs    |    | |
-| creating buttons | H   | 2.5 hrs    |    | |
-| Data population 1 | H | 2.5 hrs     |    | |
-| Data population 2  | H | 2.5 hrs    |    | |
-| Data population 3  | H | 2.5 hrs  |      | |
-| form creation  | H | 3 hrs |    | |
-| routing of webpages | H | 2 hrs |    | |
-| making a coehesive webpages | H | 2 hrs |    | |
-| Data creation |  H   | 3 hrs  | | |
-| Data Deletion |  H   | 3 hrs  | | |
-| css styling |  H   | 4 hrs  | | |
-| creating media queries|  H   | 4 hrs  | | |
-| Everything on page is working |  H   | 1 hr  | | |
-| total |  H   | 41.5 hr  | | |
+| Proposal | H   | 3 hrs     |   5 hrs | |
+| Airtbale | H   | .5 hrs    |  1hr  | |
+| working with API | H | 2 hrs  |   1hr   | |
+| search bars | H   | 4 hrs    |  5hrs  | |
+| creating buttons | H   | 2.5 hrs    |  2 hrs  | |
+| Album population 1 | H | 2.5 hrs     |  2 hrs | |
+| Artist population 2  | H | 2.5 hrs    |   3.5 hrs | |
+| Form population 3  | H | 2.5 hrs  |    3.5 hrs  | |
+| routing of webpages | H | 2 hrs |  1.5 hrs  | |
+| making a coehesive webpages | H | 2 hrs |   2 hrs | |
+| Data creation |  H   | 3 hrs  | 3 hrs | |
+| Data Deletion |  H   | 3 hrs  | n/a | |
+| css styling |  H   | 4 hrs  | 5 hrs | |
+| creating media queries|  H   | 4 hrs  | 4 hrs| |
+| Everything on page is working |  H   | 1 hr  |  1 hr | |
+| total |  H   | 41.5 hr  | 39.5 | |
 
 
 
