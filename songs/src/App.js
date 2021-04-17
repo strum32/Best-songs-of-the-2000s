@@ -8,6 +8,8 @@ import Header from "./components/Header";
 import Artist from './components/Artist';
 import Form from "./components/Form";
 import Nav from "./components/Nav";
+import SongCarousel from './components/SongCarousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
@@ -26,9 +28,15 @@ function App() {
     <div className="App">
         
       <Route exact path="/">
-        <Nav/>
+        <SongCarousel />
+        {/* <Nav/>
         <Header />
         <Search source={topHits}/>
+        <Albums topHits={topHits}/> */}
+      </Route>
+      <Route path="/artist">
+        <Nav/>
+        <Header />
         <Albums topHits={topHits}/>
       </Route>
       <Route path="/new">
